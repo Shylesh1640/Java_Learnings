@@ -226,3 +226,71 @@ Java is statically typed, so all variables must be declared with a type.
 Use camelCase for variable names (studentName, totalMarks).
 
 Default values: int = 0, boolean = false, String = null.
+
+🔄 What is Type Casting in Java?
+Type Casting is the process of converting one data type into another.
+
+🧠 Think of it like pouring milk (data) from a small cup (int) into a bigger glass (double), or vice versa.
+
+🔹 Two Types of Type Casting
+1. ✅ Widening Type Casting (Automatic)
+Converts a smaller type to a larger type
+
+Safe and automatic (no data loss)
+
+💡 Example:
+java
+Copy
+Edit
+int a = 10;
+double b = a;  // Automatically converts int → double
+
+System.out.println(b);  // Output: 10.0
+From → To
+byte → short → int → long → float → double
+
+2. ⚠️ Narrowing Type Casting (Manual)
+Converts a larger type to a smaller type
+
+Not automatic → You must write the cast
+
+May cause data loss
+
+💡 Example:
+java
+Copy
+Edit
+double x = 9.75;
+int y = (int) x;  // You manually cast it
+
+System.out.println(y);  // Output: 9 (decimal is lost)
+📋 Real-Life Analogy
+Imagine:
+
+You have a bucket of water (double).
+
+Pouring it into a glass (int) may overflow — some water (data) is lost.
+
+But pouring from a glass into a bucket is fine — no data loss.
+
+🧪 Code Example
+java
+Copy
+Edit
+public class TypeCastingDemo {
+    public static void main(String[] args) {
+        int a = 100;
+        double b = a;  // widening
+        System.out.println("Widening: " + b);  // 100.0
+
+        double x = 9.81;
+        int y = (int) x;  // narrowing
+        System.out.println("Narrowing: " + y);  // 9
+    }
+}
+🧠 Summary
+Type	Direction	Safe?	Example
+Widening	Small → Big	✅ Safe	int → double
+Narrowing	Big → Small	⚠️ Risky	double → int (needs casting)
+
+
