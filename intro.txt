@@ -103,3 +103,126 @@ JDK (Java Development Kit)	Contains JRE + development tools (like javac)
 
 📌 Summary for You
 Java is a language designed to be simple, robust, and portable, and the theory behind it emphasizes object-oriented thinking, platform independence, and a clean execution model using bytecode and the JVM.
+
+
+ 2. Variables, Data Types & Operators in Java
+📦 1. Variables in Java
+A variable is a name given to a memory location used to store data.
+
+📌 Syntax:
+java
+Copy
+Edit
+dataType variableName = value;
+🔸 Example:
+java
+Copy
+Edit
+int age = 20;
+String name = "Shylesh";
+🧠 Variables must be declared with a data type in Java.
+
+🧬 2. Data Types in Java
+Java has two categories of data types:
+
+🔹 A. Primitive Data Types (8 types)
+Data Type	Size	Example
+byte	1 byte	byte a = 100;
+short	2 bytes	short b = 32000;
+int	4 bytes	int age = 20;
+long	8 bytes	long population = 100000L;
+float	4 bytes	float price = 10.5f;
+double	8 bytes	double pi = 3.14159;
+char	2 bytes	char grade = 'A';
+boolean	1 bit	boolean isJavaFun = true;
+
+🔹 B. Non-Primitive Data Types
+Type	Description
+String	A sequence of characters
+Array	Collection of same data type
+Class, Interface, Object	User-defined data structures
+
+⚙️ 3. Type Casting
+Converting one data type into another.
+
+🔸 Implicit (Widening):
+java
+Copy
+Edit
+int a = 10;
+double b = a;  // int to double (safe)
+🔸 Explicit (Narrowing):
+java
+Copy
+Edit
+double a = 9.8;
+int b = (int) a;  // double to int (data loss possible)
+➕ 4. Operators in Java
+🔹 A. Arithmetic Operators
+java
+Copy
+Edit
++   // Addition
+-   // Subtraction
+*   // Multiplication
+/   // Division
+%   // Modulus (remainder)
+🔹 B. Relational (Comparison) Operators
+java
+Copy
+Edit
+==  // Equal to
+!=  // Not equal to
+>   // Greater than
+<   // Less than
+>=  // Greater than or equal to
+<=  // Less than or equal to
+🔹 C. Logical Operators
+java
+Copy
+Edit
+&&  // Logical AND
+||  // Logical OR
+!   // Logical NOT
+🔹 D. Assignment Operators
+java
+Copy
+Edit
+=    // Assign
++=   // a += 3 → a = a + 3
+-=   // -=, *=, /=, %=
+🔹 E. Increment/Decrement
+java
+Copy
+Edit
+++a  // Pre-increment
+a++  // Post-increment
+--a  // Pre-decrement
+a--  // Post-decrement
+✨ Code Example: Variables and Operators
+java
+Copy
+Edit
+public class Main {
+    public static void main(String[] args) {
+        int a = 10, b = 5;
+        int sum = a + b;
+        boolean result = (a > b) && (b > 2);
+
+        System.out.println("Sum: " + sum);
+        System.out.println("Is a > b and b > 2? " + result);
+    }
+}
+Output:
+
+vbnet
+Copy
+Edit
+Sum: 15
+Is a > b and b > 2? true
+🧠 Tips:
+Java is statically typed, so all variables must be declared with a type.
+
+Use camelCase for variable names (studentName, totalMarks).
+
+Default values: int = 0, boolean = false, String = null.
