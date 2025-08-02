@@ -47,19 +47,6 @@ Java is a robust, object-oriented programming language used widely for:
 - [ ] JDBC (Database Access)
 - [ ] Servlets & JSP (Web Apps)
 
----
-
-## 📂 Repository Structure
-
-/Java-Learning-Journey
-├── 01_Introduction/
-│ └── HelloWorld.java
-├── 02_Basics/
-│ └── VariablesDataTypes.java
-├── 03_ControlFlow/
-├── 04_OOP/
-├── README.md
-
 
 ---
 
